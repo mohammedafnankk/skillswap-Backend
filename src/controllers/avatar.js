@@ -27,18 +27,21 @@ const storage = multer.diskStorage({
     // if(!user){
     //     user = await User.findByIdAndUpdate({_id:id})
     // }
-    const avatar = req.file.filename;
-    console.log(req.file);
-    try {
-      res
-        .status(200)
-        .json({
-          msg: "avatar uploaded",
-          imageUrl: `http://localhost:8020/static/uploads/${avatar}`,
-        });
-        //  await new 
-    } catch (error) {
-      res.status(500).json({ err: error });
-    }
+
+
+    
+    // const avatar = req.file.filename;
+    // console.log(req.file);
+    // try {
+    //   res
+    //     .status(200)
+    //     .json({
+    //       msg: "avatar uploaded",
+    //       imageUrl: `http://localhost:8020/static/uploads/${avatar}`,
+    //     });
+    //     //  await new 
+    // } catch (error) {
+    //   res.status(500).json({ err: error });
+    // }
   });
   export default router
