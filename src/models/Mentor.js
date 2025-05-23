@@ -26,6 +26,7 @@ const MentorSchema = db.Schema({
         }
     ],
     skills:[],
+    languages:[],
     skill_discription:String,
     joined_date: String,
     isOnline:{
