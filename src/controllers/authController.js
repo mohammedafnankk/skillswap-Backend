@@ -149,7 +149,7 @@ export const forgotPassword = async (req, res) => {
     const token = jwt.sign({ id: user._id }, process.env.ACCESS_TOKEN, {
       expiresIn: "1m",
     });
-    const link = `https://skillswap-backend-65xf.onrender.com/reset-password/${user._id}/${token}`;
+    const link = `https://skillswapskills.netlify.app/reset-password/${user._id}/${token}`;
 
     var transporter = nodemailer.createTransport({
       service: "gmail",
